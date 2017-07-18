@@ -54,8 +54,7 @@
     self.backgroundViews = [NSMutableArray array];
     for (NSInteger i = 0; i < 4; i++) {
         UIView *backgroundView = [[UIView alloc] initWithFrame:CGRectNull];
-        backgroundView.backgroundColor = [UIColor blackColor];
-        backgroundView.alpha = 0.0f;
+        backgroundView.backgroundColor = [UIColor colorWithRed:1/255.0f green:76/255.0f blue:121/255.0f alpha:0.8];
         [self.view addSubview:backgroundView];
         [self.backgroundViews addObject:backgroundView];
         
